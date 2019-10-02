@@ -44,7 +44,7 @@ class InteractiveRecord
   end
   
   def self.find_by(attr_hash)
-    c = attr_hash.keys.to_join
+    c = attr_hash.keys.join
     binding.pry
   #condition = attr_hash.tap {|c| "#{c.to_s}= ?"}.join("AND") 
     #DB[:conn].execute("SELECT * FROM #{table_name} WHERE #{} = ?", attr_hash.values)
