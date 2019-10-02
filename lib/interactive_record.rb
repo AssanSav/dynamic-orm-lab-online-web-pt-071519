@@ -49,5 +49,4 @@ class InteractiveRecord
     DB[:conn].execute("SELECT * FROM #{table_name} WHERE #{condition} = ?", attr_hash.values)
     binding.pry
   end
-  end
 end
