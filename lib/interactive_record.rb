@@ -47,7 +47,7 @@ class InteractiveRecord
     c = {attr_hash.keys}.to_join
     binding.pry
   #condition = attr_hash.tap {|c| "#{c.to_s}= ?"}.join("AND") 
-    DB[:conn].execute("SELECT * FROM #{table_name} WHERE #{} = ?", attr_hash.values)
+    #DB[:conn].execute("SELECT * FROM #{table_name} WHERE #{} = ?", attr_hash.values)
     
   end
 end
